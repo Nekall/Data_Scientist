@@ -12,20 +12,31 @@ end
 
 #EXO1
 def cmb_handle(array_twittos)
-  puts "Question n°1"
-  puts "Il à #{array_twittos.count} handle dans ce Array"
+  puts "__________Question n°1__________"
+  puts " "
+  puts "Il à #{array_twittos.count} handle dans ce Array."
+  puts "_________________________________"
+  puts " "
+  puts " "
+  puts " "
 end
 
 #EXO2
 def little_handle(twittoslength)
-  puts "Question n°2"
+  puts "__________Question n°2__________"
+  puts " "
   twittoslength.sort_by!(&:length)
-  puts twittoslength[0]
+  puts "L'handle le plus court de cette liste est : #{twittoslength[0]}."
+  puts "_________________________________"
+  puts " "
+  puts " "
+  puts " "
 end
 
 #EXO3
 def fiv_handle(twittoslength)
-  puts "Question n°3"
+  puts "__________Question n°3__________"
+  puts " "
   counter = 0
   twittoslength.each do |index|
     if((index.length) == 5)
@@ -33,12 +44,17 @@ def fiv_handle(twittoslength)
       else
     end
   end
-  puts counter
+  puts "Il y a #{counter} handle qui contiennent 5 caractères."
+  puts "_________________________________"
+  puts " "
+  puts " "
+  puts " "
 end
 
 #EXO4
 def up_handle(twittoslength)
-  puts "Question n°4"
+  puts "__________Question n°4__________"
+  puts " "
   counter = 0
   twittoslength.each do |index|
     if(index.start_with?(/[A-Z]/) == true)
@@ -46,32 +62,51 @@ def up_handle(twittoslength)
     end
   end
   puts "Il y a #{counter} handle commencant par une majuscule."
+  puts "_________________________________"
+  puts " "
+  puts " "
+  puts " "
 end
 
 #EXO5
 def alpha_handle(twittoslength)
-  puts "Question n°5"
+  puts "__________Question n°5__________"
+  puts " "
   twittosmall = twittoslength
 
   twittosmall.each{|index| index.downcase!}
   twittosmall.each{|index| index.start_with?(/[a-z]/)}
   puts twittosmall.sort
+  puts "________________________________"
+  puts " "
+  puts " "
+  puts " "
 end
 
 #EXO6
 def size_handle(twittoslength)
-  puts "Question n°6"
+  puts "__________Question n°6__________"
+  puts " "
   twittoslength.sort_by!(&:length)
   puts twittoslength
+  puts "_________________________________"
+  puts " "
+  puts " "
+  puts " "
 end
 
 #EXO7
 def epenser_handle(array_twittos)
-  puts "Question n°7"
+  puts "__________Question n°7__________"
+  puts " "
   counter = 0
   array_twittos.each do |index|
     if(index.include? "@epenser")
       then puts "Epenser est à la #{counter}eme place"
+          puts "_________________________________"
+          puts " "
+          puts " "
+          puts " "
       else counter = (counter + 1)
     end
   end
